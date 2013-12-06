@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <item type="id" name="date_label" />
+    <item type="id" name="date_text" />
+    
+    <item type="id" name="tweet_label" />
+    <item type="id" name="tweet_text" />
+    <item name="user_timeline_loader" type="id"/>
+    
+</resources>
