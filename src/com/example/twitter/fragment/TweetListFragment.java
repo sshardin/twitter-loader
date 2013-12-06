@@ -94,7 +94,7 @@ implements LoaderManager.LoaderCallbacks<List<Tweet>>
 		else
 		{
 			loadMoreTweetsText.setText(R.string.load_more_tweets);
-			loadMoreTweetsProgress.setVisibility(View.GONE);
+			loadMoreTweetsProgress.setVisibility(View.INVISIBLE);
 		}
 	}
 	
