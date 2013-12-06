@@ -13,7 +13,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.json.R;
-import com.example.twitter.adapter.TwitterAdapter;
+import com.example.twitter.adapter.TweetAdapter;
 import com.example.twitter.api.UserTimeline;
 import com.example.twitter.api.model.Tweet;
 import com.example.twitter.loader.UserTimelineLoader;
@@ -55,14 +55,14 @@ implements LoaderManager.LoaderCallbacks<List<Tweet>>
 		
 		if(userTimeline != null)
 		{
-			setListAdapter(new TwitterAdapter(
+			setListAdapter(new TweetAdapter(
 					getActivity(),
 					R.layout.twitter_row,
 					userTimeline.getTweets()));
 		}
 		else
 		{
-			setListAdapter(new TwitterAdapter(
+			setListAdapter(new TweetAdapter(
 					getActivity(),
 					R.layout.twitter_row,
 					new ArrayList<Tweet>()));
@@ -137,7 +137,7 @@ implements LoaderManager.LoaderCallbacks<List<Tweet>>
 	@Override
 	public void onLoadFinished(Loader<List<Tweet>> loader, List<Tweet> tweets)
 	{
-		TwitterAdapter adapter = (TwitterAdapter) getListAdapter();
+		TweetAdapter adapter = (TweetAdapter) getListAdapter();
 
 		if(adapter == null || tweets == null || tweets.size() == 0) return;
 		

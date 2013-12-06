@@ -17,7 +17,7 @@ import android.widget.TextView;
 /**
  * This class is used to represent the information in each row of the applications list view
  */
-public class TwitterAdapter extends ArrayAdapter<Tweet>
+public class TweetAdapter extends ArrayAdapter<Tweet>
 {
 	private int layoutResourceId;
 
@@ -27,7 +27,7 @@ public class TwitterAdapter extends ArrayAdapter<Tweet>
 	 * @param layoutResourceId the id to represent the layout
 	 * @param data a list of information for each row in the list view
 	 */
-	public TwitterAdapter(Context context, int layoutResourceId, List<Tweet> data)
+	public TweetAdapter(Context context, int layoutResourceId, List<Tweet> data)
 	{
 		super(context, layoutResourceId, data);
 		this.layoutResourceId = layoutResourceId;
